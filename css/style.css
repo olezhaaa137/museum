@@ -66,7 +66,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     font-display: swap;
 }
 
-:root {
+:root { 
   --font-family: "Roboto", sans-serif;
   --second-family: "Forum", sans-serif;
 }
@@ -84,9 +84,22 @@ body{
 }
 
 .wrapper {
+    max-width: 100%;
     min-height: 100%;
     display: flex;
     flex-direction: column;
+}
+
+._ibg{
+    position: relative;
+}
+._ibg img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
 }
 
 /*--PAGE--------------------------------*/
@@ -95,6 +108,8 @@ body{
 }
 
 .page__welcome {
+}
+.page__visiting {
 }
 
 /*-HEADER-------------------------------------------------------------*/
@@ -153,6 +168,7 @@ body{
 .welcome {
     position: relative;
     background: #030303;
+    overflow: hidden;
 }
 .welcome__container {
     position: relative;
@@ -274,7 +290,80 @@ body{
 .welcome__background-image{
     position: absolute;
     top: 0;
-    right: 15px;
+    right: 0;
     z-index: 2;
     box-shadow: 0 4px 4px 0 #030303;
+}
+.welcome__background-image img{
+    max-width: 100%;
+}
+
+/*-VISITING-----------------------------------------------*/
+
+
+.visiting {
+    padding: 75px 0;
+}
+.visiting__container {
+}
+
+.visiting__title {
+    font-weight: 400;
+    font-family: var(--second-family);
+    font-size: 80px;
+    line-height: 113%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #9d8665;
+    padding: 0 0 25px 0;
+    border-bottom: 3px solid #710707;
+}
+.visiting__body {
+    padding: 75px 0 0 0;
+}
+.visiting__row {
+    display: flex;
+    margin: 0 -30px;
+}
+.visiting__column {
+    flex: 0 1 33.33333%;
+    padding: 0 30px;
+    margin: 0 0 75px 0;
+}
+.visiting__item {
+}
+.item-visiting {
+}
+.item-visiting__image {
+    padding: 0 0 64.772%  0;
+    display: block;
+    position: relative;
+    margin: 0 0 25px 0;
+}
+.item-visiting__body {
+}
+.item-visiting__body>*:not(:last-child) {
+    margin: 0 0 10px 0;
+}
+.item-visiting__label {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    display: block;
+    color: inherit;
+}
+.item-visiting__horizontalrule{
+    min-height: 2px;
+    background-color: #710707;
+    max-width: 68.18%;
+}
+.item-visiting__type {
+    font-weight: 200;
+    font-size: 22px;
+}
+.item-visiting__text {
+    font-weight: 200;
+    font-size: 18px;
 }
