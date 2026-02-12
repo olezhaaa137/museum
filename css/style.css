@@ -112,6 +112,9 @@ body{
 .page__visiting {
 }
 
+.page__explore {
+}
+
 /*-HEADER-------------------------------------------------------------*/
 .header-top {
     background: #030303;
@@ -366,4 +369,69 @@ body{
 .item-visiting__text {
     font-weight: 200;
     font-size: 18px;
+}
+
+/*-EXPLORE-------------------------------------------------------------*/
+
+
+.explore {
+    background: #030303;
+    padding: 75px 0;
+}
+.explore__container {
+}
+.explore__body{
+    display: flex;
+}
+.explore__content {
+    color: #fff;
+    flex: 1 1 auto;
+    padding: 0 60px 0 0;
+}
+.explore__title {
+    padding: 0 0 25px 0;
+    border-bottom: 3px solid #710707;
+    margin: 0 0 75px 0;
+}
+.title {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 113%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.explore__paragraphs >*:not(:last-child) {
+    margin: 0 0 25px 0;
+}
+.explore__paragraph {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 175%;
+}
+.gold-text {
+    color: #caaa7d;
+}
+.explore__images{
+    flex: 0 0 50%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 0 0 48.61% 0;
+}
+.explore__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.explore__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.explore__image_before {
+    max-width: 61.11%;
+    z-index: 200;
+}
+.explore__image_after {
 }
