@@ -115,6 +115,8 @@ body{
 .page__explore {
 }
 
+.page__video {
+}
 /*-HEADER-------------------------------------------------------------*/
 .header-top {
     background: #030303;
@@ -440,4 +442,135 @@ body{
     top: 0; left: 58.4%;
     z-index: 300;
     cursor: pointer;
+}
+
+
+/*-VIDEO---------------------------------------------------------------------------*/
+
+
+.video {
+    padding: 75px 0;
+}
+.video__container {
+}
+
+.video__header {
+    display: flex;
+    margin: 0 0 75px 0;
+}
+.video__title {
+    color: #9d8665;
+    margin: 0 115px 0 0;
+}
+
+.video__subtext {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 175%;
+}
+.video__main {
+    padding: 0 0 45.138% 0;
+    position: relative;
+}
+.video__main iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video__main {
+}
+.main-video {
+}
+.main-video__controls {
+    display: flex;
+    align-items: center;
+    padding: 25px 30px;
+    max-height: 85px;
+    background: #000;
+    margin: 0 0 40px 0;
+}
+.main-video__controls > *:not(:last-child){
+    margin-right: 50px;
+}
+.main-video__controls button{
+    background: transparent; /* Убирает серый фон */
+    border: none;             /* Убирает стандартную рамку */
+    padding: 0;               /* Убирает внутренние отступы */
+    cursor: pointer;          /* Добавляет "палец" при наведении */
+    outline: none; 
+}
+.main-video__playbutton {
+    margin: 0 50px 0 0;
+}
+.main-video__progressbar {
+    width: 929px;
+    max-height: 8px;
+    background: #c4c4c4;
+    display: inline-flex;
+    align-items: center;
+}
+.main-video__timecircle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background: #fff;
+}
+.main-video__volumebutton {
+    
+}
+.main-video__volumebar {
+    width: 155px;
+    height: 8px;
+    background: #c4c4c4;
+}
+.main-video__fullscreenbutton {
+}
+.video__slider {
+}
+.slider-video {
+}
+.slider-video__body {
+    display: flex;
+    margin: 0 -21px;
+}
+.slider-video__column {
+    flex: 0 1 33.33333%;
+    padding: 0 21px;
+    margin: 0 0 40px 0;
+}
+.slider-video__element {
+    position: relative;
+    padding: 0 0 57.466% 0;
+}
+.slider-video__element iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.slider-video__switches {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-video__switches > *:not(:last-child){
+    margin-right: 20px;
+}
+.slider-video__leftarrow {
+}
+.slider-video__circle {
+    border-radius: 100%;
+    background-color: #999;
+    width: 12px;
+    height: 12px;
+}
+.slider-video__circle_current {
+    background-color: #333;
+}
+.slider-video__rightarrow {
 }
