@@ -622,3 +622,253 @@ body{
     right: 0;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
 }
+
+.tickets {
+    padding: 75px 0;
+}
+.tickets__container {
+}
+
+.tickets__body {
+}
+.tickets__title {
+    color: #9d8665;
+    padding: 0 0 25px 0;
+    border-bottom: 3px solid #710707;
+    margin: 0 0 75px 0;
+}
+
+.tickets__content {
+    display: flex;
+}
+.tickets__miniature {
+    position: relative;
+    flex: 0 0 50%;
+    padding: 0 0 38.194% 0;
+    margin: 0 60px 0 0;
+}
+.tickets__miniature img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.tickets__type {
+}
+.type-tickets {
+}
+.type-tickets__label {
+    font-weight: 700;
+    font-size: 28px;
+    margin: 0 0 50px 0;
+}
+.type-tickets__radiobuttons {
+    margin-right: 215px;
+}
+.type-tickets__radioubutton {
+
+}
+.type-tickets__radiolabel{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 22px;
+}
+.type-tickets__radioubutton:not(:last-child) {
+    margin: 0 0 25px 0;
+}
+.type-tickets__radioel {
+    display: none;
+
+}
+.type-tickets__customradio {
+    height: 17px;
+    width: 17px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-right: 23px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.type-tickets__customradio::after{
+    content: "";
+    height: 53.8%;
+    width: 53.8%;
+    display: block;
+    background: black;
+    border-radius: 50%;
+
+    transform: scale(0);
+    transition: transform   0.1s;
+}
+
+.type-tickets__radioel:checked +
+.type-tickets__customradio::after{
+    transform: scale(1);
+}
+
+.tickets__amount {
+    flex: 1 1 auto;
+}
+.amount-tickets {
+}
+.amount-tickets__content{
+    margin-left: 25px;
+}
+.amount-tickets__label {
+    text-align: right;
+    font-weight: 700;
+    font-size: 28px;
+    margin: 0 0 25px 0;
+}
+.amount-tickets__groupofbuttons {
+    margin: 0 0 50px 0;
+    float: right;
+}
+.amount-tickets__numofticketsbutton {
+    min-height: 50px;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    max-width: 150px;
+}
+.amount-tickets__numofticketsbutton button{
+    background-color: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.amount-tickets__numofticketsbutton input{
+    font-weight: 300;
+    font-size: 22px;
+    text-align: center;
+}
+
+.amount-tickets__numofticketsbutton button{
+    flex: 0 0 19px;
+}
+.amount-tickets__numofticketsbutton input{
+    flex: 1 1 auto;
+    min-width: 0;
+    text-align: center;
+}
+.amount-tickets__numofticketsbutton:not(:last-child) {
+    margin: 0 0 10px 0;
+}
+
+.amount-tickets__sublabel {
+    font-weight: 300;
+    font-size: 22px;
+    margin: 0 0 15px 0;
+}
+.amount-tickets__finalprice{
+    text-align: right;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 0.06em;
+    margin: 0 0 60px 0;
+}
+.buy-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    min-height: 50px;
+    background: #000;
+    font-weight: 300;
+    font-size: 22px;
+    letter-spacing: 0.09em;
+    text-align: center;
+    padding: 0 38px;
+    color: #fff;
+    max-width: 175px;
+    white-space: nowrap;
+    float: right;
+}
+
+.parallax-image {
+   /* Установка фонового изображения */
+    background-image: url(../images/parallax.jpg);
+
+    /* Запрет на прокрутку фона */
+    background-attachment: fixed;
+    z-index: -1;
+
+    /* Центрирование и масштабирование фона */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Задание высоты блока */
+    height: 100vh; /* Занимает всю высоту экрана */
+    width: 100%;
+    max-height: 400px;
+}
+
+.parallax-image img{
+   
+}
+
+.contacts {
+    padding: 75px 0;
+}
+.contacts__container {
+}
+
+.contacts__body {
+}
+.contacts__title {
+    color: #9d8665;
+    padding: 0 0 25px 0;
+    border-bottom: 3px solid #710707;
+    margin: 0 0 75px 0;
+}
+
+.contacts__content {
+    display: flex;
+    justify-content: space-between;
+}
+.contacts__info {
+    flex: 0 1 auto;
+}
+.info-contacts {
+}
+
+.info-contacts p:not(:last-child){
+    margin: 0 0 25px 0;
+}
+.info-contacts p{
+    font-weight: 300;
+    font-size: 22px;
+}
+.info-contacts__title {
+    font-weight: 500;
+    font-size: 28px;
+    max-width: 227px;
+    margin: 0 0 50px 0;
+}
+.info-contacts__address {
+}
+.info-contacts__phone {
+}
+.info-contacts__main {
+}
+.contacts__map {
+    position: relative;
+    padding: 0 0 43.05% 0;
+    flex: 0 0 960px;
+}
+
+.contacts__map img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
