@@ -872,3 +872,89 @@ body{
     height: 100%;
     object-fit: cover;
 }
+
+.footer {
+    background-color: #030303;
+    border-bottom: 3px solid white;
+}
+.footer__container {
+    padding: 75px 0 50px 0;
+}
+
+.footer__socialmedia {
+    display: flex;
+    align-items: flex-start;
+}
+.footer__label {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #fff;
+    background: url(../images/header/icons/01.svg) 0 0 no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 74px;
+    margin: 0 145px 0 0;
+}
+
+.footer__menu {
+}
+.menu-footer {
+    margin: 0 397px 0 0;
+}
+.menu-footer__body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 128px;
+    gap: 25px 150px;
+}
+.menu-footer__element {
+
+}
+.menu-footer__element a{
+    font-weight: 200;
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 0.09em;
+}
+.footer__icons {
+    display: flex;
+    padding: 75px 0 0 0;
+}
+.icons-footer {
+
+}
+.icons-footer__element {
+
+}
+.icons-footer__element:not(:last-child) {
+    margin-right: 25px;
+}
+
+.footer__rsschool {
+}
+.rsschool-footer {
+    background: #030303;
+    padding: 50px 0;
+}
+.rsschool-footer__container {
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0.09em;
+    color: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rsschool-footer__year {
+}
+.rsschool-footer__label {
+}
+.rsschool-footer__username {
+}
