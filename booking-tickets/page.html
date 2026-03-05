@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking</title>
+    <link rel="stylesheet" href="./booking-style.css">
+</head>
+<body>
+    <main class="booking">
+        <div class="booking__container">
+            <div class="booking__body">
+                <div class="booking__form form-booking">
+                    <div class="form-booking__title">
+                        <div class="form-booking__main-title">Booking tickets</div>
+                        <div class="form-booking__subtitle">Tour to Louvre</div>
+                    </div>
+                    <div class="form-booking__inputs">
+                        <div class="form-booking__input-group">
+                                <input type="date" class="form-booking__input form-booking__date" required>
+                                <label for="booking-date" class="form-booking__fake-placeholder">Date</label>
+                        </div>
+                        <div class="form-booking__input-group">
+                            <input type="time" class="form-booking__input form-booking__time" required>
+                            <label for="booking-date" class="form-booking__fake-placeholder">Time</label>
+                        </div>
+                        <input type="text" class="form-booking__input_full form-booking__name" required placeholder="Name">
+                        <input type="email" class="form-booking__input_full form-booking__email" required placeholder="Email">
+                        <input type="tel" class="form-booking__input_full form-booking__tel" required placeholder="Phone">
+                        <select name="" id=""  class="form-booking__input_full form-booking__tickettype" required>
+                            <option value="" disabled selected hidden>Ticket Type</option>
+                            <option value="permanent">Permanent exhibition</option>
+                            <option value="temporary">Temporary exhibition</option>
+                            <option value="combined">Combined Admission</option>
+                        </select>
+                    </div>
+                    <div class="form-booking__summary summary">
+                        <div class="summary__label">Entry ticket</div>
+                        <div class="summary__element element-summary">
+                            
+                            <p>Basic 18+ (20 €)</p>
+                            <div class="element-summary__buttongroup">
+                                <button><img src="../images/book-ticket/icons/minus.svg" alt=""></button>
+                                <input type="text" value="2" readonly>
+                                <button><img src="../images/book-ticket/icons/plus.svg" alt=""></button>
+                            </div>
+                            
+                        </div>
+                        <div class="summary__element element-summary">
+                            
+                            <p>Senior 65+ (10 €)</p>
+                            <div class="element-summary__buttongroup">
+                                <button><img src="../images/book-ticket/icons/minus.svg" alt=""></button>
+                                <input type="text" value="2" readonly>
+                                <button><img src="../images/book-ticket/icons/plus.svg" alt=""></button>
+                            </div>
+                                
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="booking__overview overview-booking">
+                    <div class="overview-booking__main">
+                        <div class="overview-booking__top-part">
+                            <div class="booking-details details-booking">
+                                <div class="details-booking__label">Overview</div>
+                                <div class="details-booking__sublabel">Tour to Louvre</div>
+                                <ul class="details-booking__info">
+                                    <li class="details-booking__info-date">Friday, August 19</li>
+                                    <li class="details-booking__info-time">16 : 30</li>
+                                    <li class="details-booking__info-type">Temporary exhibition</li>
+                                </ul>
+                            </div>
+                            <div class="overview-booking__top-part__background"><img src="../images/book-ticket/overview-background.jpg" alt=""></div>
+                        </div>
+                        <div class="overview-booking__middle-part">
+                            <div class="overview-booking__middle-part-element">
+                                <div class="overview-booking__middle-part-element__numoftickets">2</div>
+                                <div class="overview-booking__middle-part-element__title">Basic (20 €)</div>
+                                <div class="overview-booking__middle-part-element__sum">40 €</div>
+                            </div>
+                             <div class="overview-booking__middle-part-element">
+                                <div class="overview-booking__middle-part-element__numoftickets">2</div>
+                                <div class="overview-booking__middle-part-element__title">Senior (10 €)</div>
+                                <div class="overview-booking__middle-part-element__sum">20 €</div>
+                            </div>
+                        </div>
+                        <div class="overview-booking__totalsum overview-booking-total">
+                            <div class="overview-booking-total__label">Total:</div>
+                            <div class="overview-booking-total__sum">60 €</div>
+                        </div>
+                    </div>
+                    <div class="overview-booking__cards">
+                        <div class="overview-booking__frontcard frontcard">
+                            <div class="frontcard__head">
+                                <div>
+                                    <div class="overview-booking__cardnumber">
+                                        <label for="cardnumber" class="overview-booking__frontcard__inputlabel">
+                                            Card number</label>
+                                            <input type="text" id="cardnumber">
+                                
+                                    </div>
+                                
+                                    <div class="overview-booking__expirationdate">
+                                        <label for="month" class="overview-booking__frontcard__inputlabel">Expiration date</label>
+                                        <div class="overview-booking__expirationdateinputs">
+                                            <input type="number" id="month">
+                                            <input type="number">
+                                        </div>
+                                
+                                    </div>
+                                </div>
+                                <div class="frontcard__photos">
+                                    <img src="../images/book-ticket/Visa.png" alt="" >
+                                    <img src="../images/book-ticket/Mastercard.png" alt="">
+                                </div>
+                            </div>
+                            <div class="overview-booking__cardholder">
+                                <label for="cardholder" class="overview-booking__frontcard__inputlabel">Cardholder name</label>
+                                <input type="text" id="cardholder">
+                            </div>
+                            
+                        </div>
+                        <div class="overview-booking__backcard backcard">
+                            <div class="overview-booking__secutity-strip"></div>
+                            <div class="backcard__cvvgroup">
+                                <div class="overview-booking__cvv">
+                                    <label for="cvv">
+                                        CVC/CVV
+                                        <input type="text" maxlength="3" id="cvv">
+                                    </label>
+                                </div>
+                                <div class="overview-booking__backcard__label">The last 3 or 4 digits on back of the card</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overview-booking__button">
+                        <a href="">Book</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
